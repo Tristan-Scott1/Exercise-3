@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
 img {
     max-width: 100%;
 }
+
 body {
     background: black;
     color: white;
@@ -15,21 +17,25 @@ body {
 }
 
 .imgs {
-    
+    margin: 5vh;
+    align-items: left;
+    transition: 0.5s;
 }
 
-.imgSize{
-    min-width: 810px;
-    min-height: 810px;
-    width: 810px;
-    height: 810px;
+.imgSize {
+    min-width: 50vh;
+    min-height: 50vh;
+    width: 50vh;
+    height: 50vh;
 }
 
 .myButtons {
-    margin: auto;
-    display: flex;   
+    padding-left: 30vh;
+    padding-right: 30vh;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    position: relative;
 }
 
 .btn {
@@ -70,4 +76,14 @@ h1 {
     line-height: normal;
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.2);
+}
+
+.win {
+    transition: 3s;
+    background-color: green;
+}
+
+.lose {
+    transition: 3s;
+    background-color: red;
 }
